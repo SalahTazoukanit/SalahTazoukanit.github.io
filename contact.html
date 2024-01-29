@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kanit:wght@100&family=Nabla&family=Noto+Serif:wght@100&family=Orbitron&family=Playfair+Display&family=Salsa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".//assets/css/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navinline">
+            <a href="index.html"><i class="fa-solid fa-house"> Home</i></a>
+            <a href="apropos.html"><i class="fa-solid fa-file"> A propos</i></a>
+            <a href="pageprojets.html"><i class="fa-solid fa-computer">Projects</i></a>
+            <a href="contact.html"><i class="fa-solid fa-user">Contact</i></a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="premierbloc">
+            <div class="textmoi">
+                <h1>CONTACT</h1>
+                <p>Ecrivez moi maintenat !</p>
+            </div>
+            <div class="icones">
+                <div>
+                    <img src="./assets/images/icones.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="deuxiembloc">
+            <form action="formcontact">
+            <fieldset>
+                <label id="nom">
+                    Nom: <input type="text" name="nom" minlength="2" required> 
+                </label>
+                <label id="prenom">
+                    Prénom: <input type="text" name="prenom" minlength="2" required>
+                </label>
+                <label>
+                    Mail: <input type="email" name="mail" id="" pattern=".+\.com" minlength="2" required>
+                </label>
+                <div>
+                <textarea name="write" id="" cols="70" rows="20" minlength="20" maxlength="350" required> Message </textarea>
+                </div>
+                <label>
+                    <input type="submit" name="" id="submit">
+                </label>
+            </fieldset>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="www.linkedin.com/in/salaheddine-tazoukanit" target="_blank">
+                <img src="./assets/images/Linkedin-Logo.jpg" alt="LinkedIn Logo" title="logo LinkedIn">
+            </a>
+        </div>
+        <div>
+            <a href="contact.html">
+                <img src="./assets/images/mail-logo.png" alt="logo mail">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

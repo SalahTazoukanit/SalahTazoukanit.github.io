@@ -1,0 +1,216 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.navinline{
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    font-size:large;
+    justify-content: center;
+    gap: 5%;
+    top: 1em;
+}
+.navinline a{
+    color: rgb(23, 91, 209);
+    position: sticky;
+    top:1em;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(38, 37, 37);
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em;
+}
+.salahtazu{
+    display: flex;
+    font-family: 'Orbitron', sans-serif ;
+    font-size: 2em;
+    margin-bottom: 0;
+    transition: 1s ease-in;
+}
+.salahtazu:hover{
+    font-size: 2.5em;
+    filter: drop-shadow(0 0 1rem blue);
+}
+.bonjour{
+    color: rgb(241, 241, 241);
+    display: flex;
+    font-family: 'Orbitron', sans-serif ;
+    font-size: medium;
+    width: 50%;
+}
+.competences{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    justify-items: center;
+    padding: 0;
+}
+.competences img {
+    width: 100px;
+}
+.competences h1{
+    font-family:'Orbitron', sans-serif ;
+}
+.textlogo{
+    border: solid rgb(0, 2, 92);
+    border-radius: 15px;
+    padding: 1em;
+    color: black;
+    background-color: white;
+}
+.textlogo:hover{
+    position: relative;
+    top: -10px;
+}
+.textlogo img:hover{
+    width: 130px;
+}
+
+.titre{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif ;
+}
+.liste{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 32px;
+    gap: 1em;
+}
+.emploi{
+    border: solid;
+    border-radius: 15px;
+    padding: 2em;
+    margin: 1em;
+    width: 250px;
+    background-color: white;
+    color: black;
+    font-family: 'Orbitron', sans-serif ;
+    font-size: smaller;
+}
+.emploi:hover{
+    position: relative;
+    top: -5px;
+    box-shadow: 1em 1em 1em 1em rgb(0, 0, 145);
+}
+.emploi ul{
+    text-align: left;
+    padding:0px;
+}
+.formation{
+    border: solid;
+    border-radius: 15px;
+    padding: 2em;
+    margin: 1em;
+    width: 250px;
+    background-color: white;
+    color: black;
+    font-family: 'Orbitron', sans-serif ;
+    font-size: smaller;
+}
+.formation:hover{
+    position: relative;
+    top: -5px;
+    box-shadow: 1em 1em 1em 1em rgb(87, 0, 0);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+footer img{
+    width: 50px;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width:1130px) {
+    .liste{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:530px) {
+    .liste{
+        grid-template-columns: 1fr ;
+    }
+}
+@media screen and (max-width:530px) {
+    .salahtazu{
+        font-size: 1em;
+    }
+    .navinline{
+        font-size: smaller;
+    }
+}
+@media screen and (max-width:390px) {
+    .navinline{
+        gap: 0px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:740px) {
+    .emploi{
+        width: 150px;
+    }
+    .formation{
+        width: 150px;
+    }
+}
+@media screen and (max-width:530px) {
+    .emploi{
+        width: 250px;
+    }
+}
+@media screen and (max-width:530px) {
+    .formation{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .emploi{
+        width: 150px;
+    }
+    .formation{
+        width: 150px;
+    }
+    .salahtazu{
+        pointer-events: none;
+    }
+}
+@media screen and (max-width:305px) {
+    .emploi{
+        width: 100px;
+    }
+    .formation{
+        width: 100px;
+    }
+    h2,h3,li{
+        font-size: small;
+    }
+    h1{
+        font-size: medium;
+    }
+}
+@media screen and (max-width:240px) {
+    .navinline{
+        font-size:7px;
+        gap: 0.5em;
+    }
+}
+
+
+
+

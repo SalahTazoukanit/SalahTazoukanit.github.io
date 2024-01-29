@@ -1,0 +1,169 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
+a:hover{
+    opacity: 0.5;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container1{
+    background-image: url(../images/laptop.jpg);
+    color: white;
+    width: 100%;
+    background-size:cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    position: sticky;
+    top: 0%;
+}
+@media screen and (max-width: 420px) {
+    .navinline a {
+        font-size: 10px;
+    }
+}
+.navinline{
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    font-size:large;
+    justify-content: center;
+    gap: 5%;
+}
+.navinline a{
+    color: rgb(23, 91, 209);
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em;
+}
+
+.presentation p{
+    transition: 1s ease-in;
+}
+.presentation p:hover{
+    font-size: 2.5em;
+    filter: drop-shadow(0 0 1rem blue);
+}
+
+.salahtazu{
+    display: flex;
+    font-family: 'Orbitron', sans-serif ;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+.nomignolo{
+    color: rgb(241, 241, 241);
+    display: flex;
+    font-family: 'Orbitron', sans-serif ;
+    margin-top: 0;
+}
+.bienvenue{
+    display: flex;
+    font-family: 'Orbitron', sans-serif;
+    font-size: x-large;
+    flex-direction: row;
+    justify-content: center;
+}
+h1.titrebienvenue{
+    margin-bottom: 0 ;
+}
+.textbienvenue{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+}
+.paragbienvenue{
+    margin-top: 0;
+    font-size: smaller;
+}
+#meconnaitre{
+    font-family: 'Orbitron', sans-serif;
+    font-size: small;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.connaissance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+.buton{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+.textbuton{
+    font-family: 'Orbitron', sans-serif;
+}
+.cestmoi{
+    display: flex;
+    justify-content:center;
+}
+.st{
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(0 0 0.75rem);
+    transition: 1s;
+}
+.st:hover{
+    opacity: 0.5;
+    transform: rotate(360deg);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+footer img{
+    width: 50px;
+}
+
+/* résponsive*/
+
+@media screen and (max-width:540px) {
+    .navinline{
+        gap: 1px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:420px) {
+    .salahtazu{
+        font-size: 1em;
+    }
+    .presentation p{
+        pointer-events: none;
+    }
+}
+
+@media screen and (max-width:365px) {
+    .titrebienvenue{
+        font-size: 1em;
+    }
+    .presentation p{
+        font-size: 1em;
+    }
+
+}
+@media screen and (max-width:265px) {
+    .st{
+        width: 100px ;
+        height: 100px;
+    }
+    .navinline{
+        font-size:0.5px;
+    }
+}
+

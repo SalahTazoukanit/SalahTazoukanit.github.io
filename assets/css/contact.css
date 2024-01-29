@@ -1,0 +1,161 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.navinline{
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    font-size:large;
+    justify-content: center;
+    gap: 5%;
+    top: 1em;
+}
+.navinline a{
+    color: rgb(23, 91, 209);
+}
+.textmoi p{
+    font-family: 'Orbitron', sans-serif ;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.premierbloc{
+    background-color: rgb(38, 37, 37);
+    box-shadow:0px 15px 10px -15px #383737;
+    display: flex;
+    justify-content: center;
+}
+.textmoi h1{
+    font-size: 100px;
+    margin-bottom: 0px;
+    
+}
+.textmoi{
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icones{
+    display: flex;
+    margin-top: 4em;
+}
+.icones img{
+     width: 700px;
+}
+
+@media screen and (max-width:1310px){
+    .premierbloc{
+        display: grid;
+    }
+}
+@media screen and (max-width:750px){
+    .textmoi h1{
+        font-size: 50px;
+        }
+}
+@media screen and (max-width:750px) {
+    .icones {
+        margin: 0px;
+    }
+}
+@media screen and (max-width:750px) {
+    .icones img{
+        width: 300px;
+    }
+}
+.deuxiembloc{
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    background-color: white;
+    align-items: center;
+    margin-top: 5em;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid rgb(122, 139, 167) ;
+    border-radius: 15px;
+    padding: 2em;
+    background-color: rgb(40, 35, 35);
+    box-shadow: 1em 1em 5em 1em rgb(155, 150, 150);
+}
+#nom{
+    margin-right: 6px;
+}
+#prenom{
+    margin-right: 35px;
+}
+textarea{
+    border-radius: 5px;
+}
+input:valid{
+    background-color: #71d300;
+}
+input:invalid{
+    background-color: rgb(248, 101, 101);
+}
+#submit{
+    background-color: white;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+footer img{
+    width: 50px;
+}
+
+@media screen and (max-width:650px){
+    fieldset{
+        display:grid;
+        justify-items: end;
+
+    }
+}
+@media screen and (max-width:650px){
+    textarea {
+        width: 200px;
+        height:200px;
+    }
+}
+@media screen and (max-width:650px){
+    #prenom {
+        margin-right: 0em;
+    }
+}
+@media screen and (max-width:650px){
+        #nom {
+            margin-right: 0em;
+        }
+    }
+@media screen and (max-width:545px){
+    .navinline a{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:360px) {
+    .textmoi h1,p{
+        font-size:small ;
+    }
+    .icones img {
+        width: 150px;
+    }
+    .navinline a{
+        font-size: 7px;
+    }
+    fieldset{
+        width: 20%;
+    }
+}

@@ -1,0 +1,142 @@
+
+body{
+    margin: 0;
+    width: 100%;
+}
+header{
+    position: sticky;
+    top: 0%;
+    
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+.navinline{
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    font-size:large;
+    justify-content: center;
+    gap: 5%;
+}
+.navinline a{
+    color: rgb(23, 91, 209);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-attachment:fixed;
+    font-family: 'Orbitron', sans-serif ;
+    color: white;
+    background-color: rgb(33, 33, 33);
+}
+h1{
+    margin-bottom: 0;
+    
+}
+.titre h1{
+    font-size: 45px;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+}
+.logotext{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5%;
+}
+.logotext img{
+    display: flex;
+    filter: drop-shadow(0 0 0.75rem);
+    transition: 1s;
+}
+.logotext img:hover{
+    transform: rotate(360deg);
+    filter: drop-shadow(0 0 0.75rem blue) ;
+}
+.nom{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+.nom img{
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+.listeprojet{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr ;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+p{
+    text-align: center;
+}
+@media screen and (max-width:930px) {
+    .listeprojet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.imagesprojets{
+    width: 400px;
+    height: 250px;
+    box-shadow: 0.5em 0.5em 0.5em rgb(104, 99, 99);
+    
+}
+.imagesprojets:hover{
+    opacity: 0.5;
+    position: relative;
+    top: -5px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+footer img{
+    width: 50px;
+}
+
+@media screen and (max-width:507px){
+    .navinline{
+        font-size: small;
+    }
+    .listeprojet img{
+        width: 300px;
+        height: 150px;
+    }
+    .logotext img{
+        width: 75px ;
+        height: 75px;
+    }
+}
+@media screen and (max-width:390px) {
+    .navinline{
+        font-size: 8px;
+    }
+    .listeprojet img{
+        width: 200px;
+        height: 100px;
+    }
+    .listeprojet p{
+        font-size: 10px;
+    }
+    .nom h1{
+        font-size: medium;
+    }
+}
+@media screen and (max-width:280px) {
+    .titre h1{
+        font-size: large;
+    }
+}
