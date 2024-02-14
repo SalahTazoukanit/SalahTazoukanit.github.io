@@ -106,6 +106,10 @@ footer{
 footer img{
     width: 50px;
 }
+.gitlogo{
+    margin-left: 5px;
+    width: 45px;
+}
 
 @media screen and (max-width:507px){
     .navinline{

@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding:0;
 }
+
 a:hover{
     opacity: 0.5;
 }
@@ -129,6 +130,10 @@ footer{
 }
 footer img{
     width: 50px;
+}
+.gitlogo{
+    margin-left: 5px;
+    width: 45px;
 }
 
 /* résponsive*/
